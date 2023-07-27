@@ -1,4 +1,3 @@
-import useSound from 'use-sound';
 import party from 'party-js'
 import { useState } from 'react';
 
@@ -6,13 +5,9 @@ function Home() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isFinished, setIsFinished] = useState(false)
 
-  const [play, {pause}] = useSound('./music.mp3', {
-    volume: 0.30,
-  })
-
   function handlePlay(e) {
     if (!isPlaying) {
-      play()
+      document.getElementById('music').play()
       setIsPlaying(true)
     }
     
@@ -20,7 +15,7 @@ function Home() {
   }
 
   function handleFinish() {
-    pause()
+    document.getElementById('music').pause()
     setIsFinished(true)
   }
 
@@ -29,6 +24,8 @@ function Home() {
       <h1 style={{ color: '#121214', fontSize: '3rem' }}>
         Clique no botão
       </h1>
+
+      <audio src="./music.mp3" id="music" />
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         <button
