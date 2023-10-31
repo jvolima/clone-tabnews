@@ -63,3 +63,11 @@ Nesse contexto, a simplicidade significa optar por uma estrutura que seja clara 
 Em contraposição, uma abordagem engessada e excessivamente complexa pode criar obstáculos à evolução do software. Uma arquitetura que priorize a flexibilidade deve ser preferida, evitando caminhos que levem a um sistema rígido e difícil de modificar. O objetivo é permitir que o software evolua de maneira contínua e natural, sem imposições desnecessárias que restrinjam suas possibilidades.
 
 Em resumo, a arquitetura de software deve ser uma aliada da adaptabilidade, da colaboração e da facilidade de manutenção. Ao optar por uma abordagem simples e flexível, você estabelece as bases para um projeto que possa crescer e se adaptar às mudanças, mantendo sua qualidade e eficácia.
+
+### Testes
+
+Quando se aborda esse tema, o conceito da "pirâmide" de testes é frequentemente destacado no desenvolvimento. Nele, as aplicações concentram-se predominantemente em testes unitários em detrimento de outros tipos de testes. No entanto, recentemente surgiu um novo conceito denominado "troféu" de testes. Nessa abordagem, os desenvolvedores priorizam os testes de integração em vez dos testes unitários, argumentando que é crucial concentrar-se na interação dos usuários em vez dos serviços subjacentes da aplicação em si. Nessa aplicação utilizei o conceito do "troféu" de testes, então o foco foi os testes de integração.
+
+### Importância das variáveis de ambiente
+
+É fundamental priorizar a transferência de elementos relacionados a um ambiente específico para variáveis de ambiente, sempre que viável. Essa prática promove a característica de ser "stateless" na aplicação, transformando-a em uma eficaz máquina de receber e processar dados, independente de estar em execução no ambiente de desenvolvimento, de testes ou em produção.
