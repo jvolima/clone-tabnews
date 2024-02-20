@@ -1,3 +1,4 @@
+name: clone-tabnews
 services:
   database:
     container_name: clone-tabnews-db
