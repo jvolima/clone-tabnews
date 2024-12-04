@@ -1,4 +1,4 @@
-function Home() {
+export default function Home() {
   return (
     <main>
       <h1>Objetivos da plataforma tabufscar.com.br</h1>
@@ -11,5 +11,3 @@ function Home() {
     </main>
   );
 }
-
-export default Home;
