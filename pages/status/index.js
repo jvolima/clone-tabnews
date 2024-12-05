@@ -40,13 +40,13 @@ function Database() {
       <h2>Banco de dados</h2>
       {!isLoading && data ? (
         <ul>
-          <li>
-            Conexões disponíveis: {data.dependencies.database.max_connections}
-          </li>
+          <li>Versão do Postgres: {data.dependencies.database.version}</li>
           <li>
             Conexões abertas: {data.dependencies.database.opened_connections}
           </li>
-          <li>Versão do Postgres: {data.dependencies.database.version}</li>
+          <li>
+            Conexões máximas: {data.dependencies.database.max_connections}
+          </li>
         </ul>
       ) : (
         <span>Carregando...</span>
