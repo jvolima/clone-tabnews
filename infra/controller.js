@@ -11,8 +11,6 @@ function onErrorHandler(error, request, response) {
     statusCode: error.statusCode,
   });
 
-  console.error(publicErrorObject);
-
   response.status(publicErrorObject.statusCode).json(publicErrorObject);
 }
 
